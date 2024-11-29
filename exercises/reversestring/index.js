@@ -11,12 +11,27 @@ function reverse(str) {
     let revesedString = "";
     const separatedArr = str.split("");
 
-    for(let i = separatedArr.length - 1; i >= 0; i--)
-    {
-        revesedString += separatedArr[i];
-    }
+    // sol #1
+    // for(let i = separatedArr.length - 1; i >= 0; i--)
+    // {
+    //     revesedString += separatedArr[i];
+    // }
 
-    return revesedString;
+    // sol #2
+    // for(let character of str){
+    //     revesedString = character + revesedString;
+    // }
+
+    // sol #3
+
+    return str.split('').reduce((reversed, character) => {
+        // debugger;
+        return character + reversed;
+    }, '');
+
+    // return revesedString;
 }
+
+// reverse('123');
 
 module.exports = reverse;
