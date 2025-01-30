@@ -8,7 +8,7 @@
 // --- Example
 //   const l = new LinkedList();
 //   l.insertLast('a')
-//   l.insertLast('b')
+//   l.insertLast('b')git
 //   l.insertLast('c')
 //   midpoint(l); // returns { data: 'b' }
 
@@ -22,7 +22,7 @@ function midpoint(list) {
     fast = fast.next.next;
   }
 
-  return slow;ß
+  return slow;
 }
 
 module.exports = midpoint;
