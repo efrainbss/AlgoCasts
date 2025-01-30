@@ -14,7 +14,7 @@
 
 function midpoint(list) {
 
-    let slow = list.getFirst();
+  let slow = list.getFirst();
   let fast = list.getFirst();
 
   while (fast.next && fast.next.next) {
@@ -22,7 +22,7 @@ function midpoint(list) {
     fast = fast.next.next;
   }
 
-  return slow;
+  return slow;ß
 }
 
 module.exports = midpoint;
